@@ -1,38 +1,81 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(131,58,180);
+  background: linear-gradient(159deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.5956976540616247) 50%, rgba(252,176,69,1) 100%);
+}
+.container{
+  height: 100vh;
+  width: 100%;
+}
+
+.taskTitle {
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 2rem ;
   text-align: center;
+  font-family: 'Chalkboard SE',sans-serif;
+  font-size: 30px;
+  box-shadow: 0px 0px 15px 23px #ffffff;
+  border-radius: 100px;
+ }
+
+.inputForm {
+  width: 80vh;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputForm input {
+  width: 15rem;
+  height: 1.7rem;
+  padding: 0.5rem;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* アイコンクラス名の右側をセレクタに指定 */
+.inputForm button .fa-plus{
+  padding: 0.50rem;
+  background: rgb(255, 252, 87);
+}
+
+.inputForm button .fa-trash{
+  padding: 0.50rem;
+  background: rgb(80, 182, 222);
+}
+
+.taskCount {
+  text-align: center;
+  font-family: 'Hannotate TC','Chalkboard SE',sans-serif;
+  color: #ffffff;
+ }
+
+.todoList {
+  width: 100vw;
+  margin: 2rem auto;
+}
+
+.todo {
+  margin: 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo label{
+  min-width: 15rem;
+  max-height: 2rem;
+  padding: 0.3rem 4rem;
+  background: white;
+  box-shadow: 0px 0px 10px 3px #777777;
+  border-radius: 27px;
 }
