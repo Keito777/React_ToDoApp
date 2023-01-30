@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# タスク管理ツール
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- アプリURL：[ToDoApp](https://react-to-do-app-omega.vercel.app/)
+- 参考記事：[Reactアプリ開発 入門 （基礎〜デプロイまで）](https://zenn.dev/777kkk/books/d4949816cf0c11)
 
-## Available Scripts
+## 作成目的
+- Reactで開発を行いたかったため
+- ちょっとした時に利用できるタスク管理ツールを作ってみたかったため
 
-In the project directory, you can run:
+## 主な機能
+- タスクの追加
+- タスクの進捗を管理（残りタスク数のカウント）
+- 完了したタスクの削除
 
-### `npm start`
+## デプロイ環境
+-  Vercel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## アプリの利用方法
+### step1（アプリにアクセス）
+- アプリにアクセスする
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="1263" alt="スクリーンショット 2023-01-30 9 16 06" src="https://user-images.githubusercontent.com/65697369/215364582-1f10326e-0891-4c8d-ac41-8bde7a2cfd0b.png">
+（トップ画面）
 
-### `npm test`
+### step2（タスクの追加）
+- 入力フォームにタスクを入力する
+- 入力フォーム右側の「＋ボタン」をクリックし、タスクを追加する
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1263" alt="スクリーンショット 2023-01-30 9 16 31" src="https://user-images.githubusercontent.com/65697369/215364661-87a079cc-c0f8-4cbd-9d1c-7f2209eea29e.png">
+（タスクを入力）
 
-### `npm run build`
+<img width="1263" alt="スクリーンショット 2023-01-30 9 16 44" src="https://user-images.githubusercontent.com/65697369/215364735-8766b523-8889-4c16-a6cb-76ed1e4f5747.png">
+（タスクが追加されたことを確認）
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### step3（進捗の入力）
+- 完了したタスクについては、それをクリックする
+- タスク左側のチェックボックスにチェックが入ることを確認する
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="1263" alt="スクリーンショット 2023-01-30 9 18 08" src="https://user-images.githubusercontent.com/65697369/215364857-fa280225-070f-40e6-a1c4-ab20abb4fa3d.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### step4（完了したタスクの削除）
+- 完了したタスク（チェックボックスにチェックがついているもの）については、「＋ボタン」右側の「ゴミ箱ボタン」をクリックする
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img width="1263" alt="スクリーンショット 2023-01-30 9 18 17" src="https://user-images.githubusercontent.com/65697369/215365054-4b5501b6-f500-49d8-9e39-aacad91afbf2.png">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## コード利用時の注意点(ローカル)
+- Font Awesomeの利用時：アカウントごとにKit Codeが異なるので、自分のものを`public/index.html`の\<head>内に指定してください。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 今後の予定
+- DBと連携したToDoアプリの開発
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Lisence
+This project is licensed under the MIT License, see the LICENSE file for details
